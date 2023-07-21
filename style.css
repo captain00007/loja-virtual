@@ -1,33 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: rgb(2, 3, 3)
 }
 
 .header-wrapper {
     margin-top: 5vh;
-    border: 1px solid red;
+}
+
+.header-wrapper>div {
+    margin-bottom: 3em;
+}
+
+.header-wrapper li {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
 #navbar-wrapper {
-    background-color: #9e9e9e;
+    background-color: #525252;
 }
 
-.footer {}
+#navbarNav {
+    height: 4em;
+}
+
+#navbarNav li {
+    margin: 1.5em;
+}
+
+#navbarNav li a {
+    color: white;
+}
+
+.footer {
+    background-color: #525252;
+    padding-top: 7em;
+    color: white;
+}
+
+.footer input{
+    height: 60px;
+    border-radius: 0%;
+}
+
+#btn-subscribe {
+    height: 60px;
+    border-radius: 0%;
+    text-transform: uppercase;
+}
+
+#btn-subscribe:hover{
+    background-color: #fa4251;
+}
+
+.footer .contact-input {
+    margin-bottom: 3.5em;
+}
+
+.footer .contact-input{
+    border: 1px solid black;
+}
+.col-teste{
+    border: 1px solid red;
+    
+}
+.row-teste{
+    border: 1px solid white;
+}
+
+.teste {
+    border: 1px solid black;
+}
 
 .footer ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
-}
-.footer{
-    background-color: #9e9e9e;
 }
 
+
 .footer ul li {
-    padding: 6px;
+    padding-top: 0.7em;
+}
+
+@media screen and (max-width: 992px) {
+    #navbarNav li {
+        margin: 0.5em;
+    }
+
+    #navbarNav {
+        height: auto;
+    }
 }
