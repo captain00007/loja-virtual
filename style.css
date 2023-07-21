@@ -75,6 +75,12 @@ body {
     margin-top: 1.5em;
 }
 
+.our-team-wrapper .team-col{
+    display: flex;
+    justify-content: center;
+}
+
+
 .our-team-wrapper .icons-our-team {
     display: flex;
     justify-content: center;
