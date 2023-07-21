@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 body {
@@ -38,24 +40,79 @@ body {
     color: white;
 }
 
+.products-wrapper,
+.our-team-wrapper {
+    margin-top: 4.5em;
+}
+
+.card {
+    border: none;
+}
+
+.products-wrapper #products-title,
+.our-team-wrapper #our-team-title {
+    color: white;
+    text-transform: uppercase;
+}
+
+.products-wrapper hr,
+.our-team-wrapper hr {
+    color: white;
+}
+
+.products-wrapper .card-body {
+    color: #9a9a9a;
+    text-align: center;
+}
+
+.star-color {
+    color: #fa4251;
+}
+
+.our-team-wrapper .card-body {
+    color: #9a9a9a;
+    padding: 0;
+    margin-top: 1.5em;
+}
+
+.our-team-wrapper .icons-our-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #dfdfdf;
+    margin: 5px;
+}
+
+.icons-our-team:hover{
+    background-color: #fa4251;
+}
+
+.our-team-wrapper .team {
+    text-transform: uppercase;
+}
+
 .footer {
     background-color: #525252;
     padding-top: 7em;
     color: white;
 }
 
-.footer input{
+.footer .input-wrapper {
     height: 60px;
+}
+
+.footer input {
     border-radius: 0%;
 }
 
-#btn-subscribe {
-    height: 60px;
+#button-addon2 {
     border-radius: 0%;
     text-transform: uppercase;
 }
 
-#btn-subscribe:hover{
+#button-addon2:hover {
     background-color: #fa4251;
 }
 
@@ -63,19 +120,12 @@ body {
     margin-bottom: 3.5em;
 }
 
-.footer .contact-input{
-    border: 1px solid black;
-}
-.col-teste{
-    border: 1px solid red;
-    
-}
-.row-teste{
-    border: 1px solid white;
+.footer .contact-input {
+    /* border: 1px solid black; */
 }
 
-.teste {
-    border: 1px solid black;
+.footer .folllow {
+    color: #9a9a9a;
 }
 
 .footer ul {
@@ -83,7 +133,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 .footer ul li {
     padding-top: 0.7em;
@@ -97,4 +146,38 @@ body {
     #navbarNav {
         height: auto;
     }
+
+    .our-team-wrapper div.card {
+        margin-bottom: 4rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products-wrapper, .our-team-wrapper {
+        text-align: center;
+    }
+
+    .products-wrapper div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .our-team-wrapper div {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    .our-team-wrapper div.card {
+        margin-bottom: 4rem;
+    }
+
+    .footer .input-wrapper {
+        height: 35px;
+    }
+
 }
