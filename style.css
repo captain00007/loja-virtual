@@ -12,9 +12,10 @@ body {
 
 .header-wrapper {
     margin-top: 5vh;
+    margin-bottom: 2.5rem;
 }
 
-.header-wrapper>div {
+.header-wrapper > div {
     margin-bottom: 3em;
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .products-wrapper,
-.our-team-wrapper {
+.our-team-wrapper, .about-us-wrapper {
     margin-top: 4.5em;
 }
 
@@ -50,19 +51,39 @@ body {
 }
 
 .products-wrapper #products-title,
-.our-team-wrapper #our-team-title {
+.our-team-wrapper #our-team-title,
+.about-us-wrapper #about-us-title {
     color: white;
     text-transform: uppercase;
 }
 
 .products-wrapper hr,
-.our-team-wrapper hr {
+.our-team-wrapper hr,
+.about-us-wrapper hr {
     color: white;
+}
+
+.about-us-wrapper .card-title{
+    text-transform: uppercase;
+}
+
+.about-us-wrapper .card-text{
+    margin-top: 1.5em;
+}
+
+.about-us-wrapper .card-body {
+    color: #9a9a9a;
+    padding: 0;
+    margin-top: 1.5rem;
 }
 
 .products-wrapper .card-body {
     color: #9a9a9a;
     text-align: center;
+}
+
+.nav-item:hover {
+    background-color: #fa4251;
 }
 
 .star-color {
@@ -75,7 +96,7 @@ body {
     margin-top: 1.5em;
 }
 
-.our-team-wrapper .team-col{
+.our-team-wrapper .team-col {
     display: flex;
     justify-content: center;
 }
@@ -91,7 +112,7 @@ body {
     margin: 5px;
 }
 
-.icons-our-team:hover{
+.icons-our-team:hover {
     background-color: #fa4251;
 }
 
@@ -126,10 +147,6 @@ body {
     margin-bottom: 3.5em;
 }
 
-.footer .contact-input {
-    /* border: 1px solid black; */
-}
-
 .footer .folllow {
     color: #9a9a9a;
 }
@@ -157,13 +174,20 @@ body {
         margin-bottom: 4rem;
     }
 
+    .about-us-wrapper{
+        margin-top: 0;
+        text-align: center;
+    }
+
     .footer {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .products-wrapper, .our-team-wrapper {
+
+    .products-wrapper,
+    .our-team-wrapper {
         text-align: center;
     }
 
